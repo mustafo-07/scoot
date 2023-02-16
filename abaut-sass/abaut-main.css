@@ -417,7 +417,7 @@ input[type=checkbox] {
 }
 
 .section__sing-up {
-  background-image: url(./../../images/Mask.png);
+  background-image: url(./../images/Mask.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
