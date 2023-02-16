@@ -1,0 +1,77 @@
+.FAQs {
+    padding-bottom: 160px;
+}
+
+.FAQs__title {
+    text-align: center;
+    @include Lexend-Deca-h2;
+    padding: 120px 0 0 0;
+}
+
+.FAQs__How-it-works {
+    padding-top: 64px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include abaut-for-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.FAQs__How-it-works__text {
+    @include Lexend-Deca-h2;
+    @include abaut-for-tablet {
+        padding-bottom: 32px;
+    }
+}
+
+.FAQs__How-it-works__cards {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.How-it-works__cards__card-2,
+.How-it-works__cards__card {
+    cursor: pointer;
+    background-color: $color-4;
+    // width: 650px;
+    max-width: 650px;
+    width: 100%;
+    padding: 32px 40px;
+    position: relative;
+    transition: 1s;
+}
+
+.How-it-works__cards__card:hover {
+    background-color: $color-5;
+}
+
+.How-it-works__cards__card__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// .How-it-works__cards__card::before {
+//     width: 18px;
+//     height: 15px;
+//     position: absolute;
+//     content: '';
+//     background-image: url(./../../images/icons/top.svg);
+//     background-repeat: no-repeat;
+//     top: 32px;
+//     right: 40px;
+// }
+// .How-it-works__cards__card-2__h3,
+.How-it-works__cards__card__title__h3 {
+    @include Lexend-Deca-h3;
+}
+
+.How-it-works__cards__card__p {
+    padding-top: 24px;
+    @include Space-mono-p;
+    max-width: 650px;
+}

@@ -1,0 +1,219 @@
+header {
+    width: 100vw;
+    height: 100vh;
+    width: 100%;
+    // height: 650px;
+    background-image: url(./../images/optimized-bitmap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100px;
+    background-position: right;
+    // position: relative;
+}
+
+// header::before {
+//     position: absolute;
+//     content: '';
+//     height: 15px;
+//     width: 20%;
+//     background-color: $color-1;
+//     top: 65%;
+//     @include for-tablet {
+//         width: 7%;
+//         top: 65%;
+//     }
+// }
+.nav {
+    padding-top: 34px;
+    padding-bottom: 33px;
+    background-color: $color-6;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin-top: -38px;
+    @include for-phone {
+        margin: 0;
+    }
+}
+
+.nav-bar__img {
+    padding-right: 58px;
+    @include for-tablet {
+        padding-right: 28px;
+    }
+}
+
+.nav-bar {
+    @include betvin;
+}
+
+// .nav-bar label :nth-child(1) {
+//     @include for-phone {
+//         display: none;
+//     }
+// }
+.nav-bar__img {
+    @include for-phone {
+        margin: 0 auto
+    }
+}
+
+.nav-bar__menu {
+    @include betvin;
+    width: 80%;
+    position: relative;
+    @include for-phone {
+        top: 100px;
+    }
+}
+
+.nav-bar__menu__ul {
+    @include center;
+    column-gap: 38px;
+    @include for-tablet {
+        column-gap: 25px;
+    }
+    @include for-phone {
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 30px;
+        z-index: 2;
+    }
+}
+
+.nav-bar__menu__ul__li__a {
+    transition: 1s;
+    @include Space-mono-p;
+    @include for-phone {
+        @include Space-mono-h3-hamburger;
+    }
+}
+
+.nav-bar__menu__ul__li__a:hover {
+    color: $color-1;
+}
+
+.nav-bar__menu__btn {
+    // @include btn;
+    @include for-phone {
+        margin-top: 40px;
+    }
+}
+
+// .nav-bar__menu__btn:hover {
+//     color: $color-1;
+//     background-color: $color-6;
+//     border: 2px solid $color-1;
+// }
+input[type="checkbox"] {
+    display: none;
+}
+
+.nav-bar__hamburger-btn {
+    display: none;
+    // @include for-tablet {
+    //     display: none;
+    // }
+    @include for-phone {
+        display: block;
+    }
+}
+
+.nav-bar__remuve-btn {
+    display: none;
+}
+
+.inputCheckbox:checked~.nav-bar__hamburger-btn {
+    display: none;
+}
+
+.inputCheckbox:checked~.nav-bar__hamburger-btn~.nav-bar__remuve-btn {
+    display: block;
+}
+
+.nav-bar__menu {
+    @include for-phone {
+        // padding-top: 250px;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 40px;
+        // display: flex;
+        // flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        transform: translateX(-451px);
+        max-width: 280px;
+        height: 100vh;
+        z-index: 2;
+        background-color: $color-2;
+        transition: 2s;
+    }
+}
+
+.inputCheckbox:checked~.nav-bar__menu {
+    transform: translateX(-30px);
+}
+
+.hero {
+    position: relative;
+    @include for-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    transform: translateY(250px);
+    @include for-phone {
+        text-align: center
+    }
+}
+
+.hero::before {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 15px;
+    background-color: $color-1;
+    top: 80%;
+    @include for-tablet {
+        display: none;
+    }
+}
+
+.nero__menu__btn:hover {
+    background-color: transparent;
+}
+
+.line-2 {
+    position: absolute;
+    right: 0;
+    top: 80%;
+    @include for-tablet {
+        left: -309px;
+        top: 100%;
+    }
+}
+
+// .line-1 {
+//     position: absolute;
+//     top: 500px;
+// }
+.hero__h1 {
+    @include Lexend-Deca-h1;
+}
+
+.hero-text {
+    padding-top: 40px;
+    padding-left: 80px;
+    // padding-bottom: 40px;
+    @include for-phone {
+        padding: 0;
+    }
+}
+
+.hero-text__p {
+    @include Space-mono-p-2;
+    max-width: 400px;
+    padding-bottom: 40px;
+}

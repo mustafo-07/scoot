@@ -1,0 +1,27 @@
+.section__sing-up {
+    margin-top: 178px;
+    background-image: url(./../../images/Mask.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.sing-up {
+    padding: 122px 0 122px 0;
+    @include betvin;
+    @include for-phone {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        row-gap: 40px;
+    }
+}
+
+.sine-up__h2 {
+    @include Lexend-Deca-h2-footer;
+}
+
+.sine-up__img {
+    @include center;
+    column-gap: 12px;
+}

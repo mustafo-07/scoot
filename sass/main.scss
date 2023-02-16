@@ -1,0 +1,33 @@
+@import './fonts';
+@import './mixin';
+@import './veribals';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    // background-color: rgba(41, 182, 41, 0.025);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 30px 0 30px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@import './all.blocks/all-blocks';
+button {
+    @include btn;
+    cursor: pointer;
+}
+
+button:hover {
+    color: $color-1;
+    background-color: $color-6;
+    border: 2px solid $color-1;
+}

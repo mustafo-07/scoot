@@ -1,0 +1,97 @@
+@mixin Space-mono-p {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-3;
+}
+
+@mixin Space-mono-p-2 {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-6;
+}
+
+@mixin Lexend-Deca-h1 {
+    font-family: 'Lexend Deca';
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 56px;
+    color: $color-6;
+}
+
+@mixin Lexend-Deca-h2 {
+    font-family: 'Lexend Deca';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: $color-2;
+}
+
+@mixin Lexend-Deca-h2-footer {
+    font-family: 'Lexend Deca';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: $color-6;
+}
+
+@mixin Lexend-Deca-h3 {
+    font-family: 'Lexend Deca';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-2;
+}
+
+@mixin Space-mono-h3-hamburger {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-6;
+}
+
+@mixin btn {
+    width: 180px;
+    height: 54px;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-3;
+    background-color: $color-1;
+    border: 2px transparent;
+    transition: 1s;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin betvin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin for-tablet {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin for-phone {
+    @media (max-width: 572px) {
+        @content;
+    }
+}

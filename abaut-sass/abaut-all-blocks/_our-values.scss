@@ -1,0 +1,34 @@
+.our-values__text {
+    padding-top: 68px;
+    padding-bottom: 68px;
+    text-align: center;
+    @include Lexend-Deca-h2;
+}
+
+.our-values__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    @include abaut-for-tablet {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 56px;
+    }
+}
+
+.our-values__cards__card {
+    max-width: 320px;
+    text-align: center;
+}
+
+.our-values__cards__card__h3 {
+    @include Lexend-Deca-h3;
+    padding-top: 32px;
+}
+
+.our-values__cards__card__p {
+    @include Space-mono-p;
+    padding-top: 27px;
+    max-width: 320px;
+}

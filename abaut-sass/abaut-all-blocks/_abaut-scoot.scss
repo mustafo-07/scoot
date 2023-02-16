@@ -1,0 +1,78 @@
+.abaut-scoot {
+    padding-top: 180px;
+    @include betvin;
+    position: relative;
+    @include abaut-for-tablet {
+        flex-direction: column-reverse;
+        row-gap: 58px;
+    }
+}
+
+.abaut-scoot-2 {
+    padding-top: 180px;
+    @include betvin;
+    position: relative;
+    @include abaut-for-tablet {
+        flex-direction: column;
+        row-gap: 58px;
+    }
+}
+
+.abaut-scoot-2__line {
+    position: absolute;
+    left: -500px;
+}
+
+.abaut-scoot__line {
+    position: absolute;
+    right: -500px;
+    @include for-tablet {
+        right: -600px;
+        top: 0;
+    }
+}
+
+.abaut-scoot-2__img,
+.abaut-scoot__img {
+    @include abaut-for-phone {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.abaut-scoot-2__line {
+    @include abaut-for-phone {
+        width: 600px;
+        height: 300px;
+        top: 190px;
+        left: -400px;
+    }
+}
+
+.abaut-scoot__line {
+    @include abaut-for-phone {
+        width: 600px;
+        height: 300px;
+        top: 0px;
+        right: -400px;
+    }
+}
+
+.abaut-scoot__text,
+.abaut-scoot-2__text {
+    @include abaut-for-tablet {
+        text-align: center
+    }
+}
+
+.abaut-scoot-2__text__h2,
+.abaut-scoot__text__h2 {
+    @include Lexend-Deca-h2;
+}
+
+.abaut-scoot-2__text__p,
+.abaut-scoot__text__p {
+    padding-top: 24px;
+    @include Space-mono-p;
+    max-width: 445px;
+}
